@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="purple_500">#6F0B80</color>
-    <color name="yellow_lakers">#FFC200</color>
-    <color name="purple_700">#6F0B80</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="basquete_laranja">#E8651A</color>
+    <color name="basquete_marrom">#1A0A00</color>
+
+    <color name="lakers_amarelo">#FFC200</color>
+    <color name="lakers_roxo">#290B5D</color>
+    <color name="lakers_azul">#290B5D</color>
+
+    <color name="celtics_verde">#007A33</color>
+    <color name="celtics_dourado">#BA9A5A</color>
+
+    <color name="gsw_azul">#1D428A</color>
+    <color name="gsw_amarelo">#FFC72C</color>
+
+    <color name="bulls_vermelho">#CE1141</color>
+    <color name="bulls_preto">#000000</color>
 </resources>
