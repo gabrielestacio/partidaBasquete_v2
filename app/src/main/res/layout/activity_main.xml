@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.caio.caiocardozo.partidabasquete_kotlin.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFC200"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/timeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Time A"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/placarTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="54sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/tresPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 PONTOS"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:background="@drawable/custom_button_a"/>
+
+            <Button
+                android:id="@+id/doisPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 PONTOS"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:background="@drawable/custom_button_a"/>
+
+            <Button
+                android:id="@+id/tiroLivreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tiro Livre"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:background="@drawable/custom_button_a"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#0E4AC1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/timeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Time B"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/placarTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="54sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/tresPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+3 PONTOS"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_button_b"/>
+
+            <Button
+                android:id="@+id/doisPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="+2 PONTOS"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_button_b"/>
+
+            <Button
+                android:id="@+id/tiroLivreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Tiro Livre"
+                android:padding="12dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/custom_button_b"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reiniciarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Partida"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:background="@drawable/custom_button_default"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="32dp"/>
+
+</RelativeLayout>
