@@ -8,15 +8,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_above="@id/selecionarTema">
 
         <LinearLayout
+            android:id="@+id/layoutTimeA"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#FFC200"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="@color/lakers_amarelo">
 
             <TextView
                 android:id="@+id/timeA"
@@ -25,7 +27,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Time A"
-                android:textColor="@android:color/white"
+                android:textColor="@color/lakers_roxo"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"/>
 
@@ -36,7 +38,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="54sp"
                 android:fontFamily="sans-serif"/>
 
@@ -46,9 +48,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="+3 PONTOS"
-                android:textColor="@android:color/white"
+                android:textColor="@color/lakers_amarelo"
                 android:padding="12dp"
-                android:background="@drawable/custom_button_a"/>
+                android:background="@drawable/btn_lakers_a"/>
 
             <Button
                 android:id="@+id/doisPontosA"
@@ -56,9 +58,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="+2 PONTOS"
-                android:textColor="@android:color/white"
+                android:textColor="@color/lakers_amarelo"
                 android:padding="12dp"
-                android:background="@drawable/custom_button_a"/>
+                android:background="@drawable/btn_lakers_a"/>
 
             <Button
                 android:id="@+id/tiroLivreA"
@@ -66,9 +68,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="Tiro Livre"
-                android:textColor="@android:color/white"
+                android:textColor="@color/lakers_amarelo"
                 android:padding="12dp"
-                android:background="@drawable/custom_button_a"/>
+                android:background="@drawable/btn_lakers_a"/>
         </LinearLayout>
 
         <View
@@ -78,12 +80,13 @@
             android:layout_marginTop="16dp"/>
 
         <LinearLayout
+            android:id="@+id/layoutTimeB"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="#0E4AC1"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:background="@color/lakers_azul">
 
             <TextView
                 android:id="@+id/timeB"
@@ -92,7 +95,7 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Time B"
-                android:textColor="@android:color/white"
+                android:textColor="@color/lakers_amarelo"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"/>
 
@@ -113,9 +116,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="+3 PONTOS"
+                android:textColor="@android:color/black"
                 android:padding="12dp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/custom_button_b"/>
+                android:background="@drawable/btn_lakers_b"/>
 
             <Button
                 android:id="@+id/doisPontosB"
@@ -123,9 +126,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="+2 PONTOS"
+                android:textColor="@android:color/black"
                 android:padding="12dp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/custom_button_b"/>
+                android:background="@drawable/btn_lakers_b"/>
 
             <Button
                 android:id="@+id/tiroLivreB"
@@ -133,12 +136,26 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:text="Tiro Livre"
+                android:textColor="@android:color/black"
                 android:padding="12dp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/custom_button_b"/>
+                android:background="@drawable/btn_lakers_b"/>
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/selecionarTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Tema"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="80dp"/>
 
     <Button
         android:id="@+id/reiniciarPartida"
@@ -147,9 +164,9 @@
         android:text="Reiniciar Partida"
         android:textColor="@android:color/white"
         android:padding="12dp"
-        android:background="@drawable/custom_button_default"
+        android:background="@drawable/custom_button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="32dp"/>
+        android:layout_margin="16dp"/>
 
 </RelativeLayout>
