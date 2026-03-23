@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="purple_500">#6F0B80</color>
+    <color name="yellow_lakers">#FFC200</color>
+    <color name="purple_700">#6F0B80</color>
 </resources>
